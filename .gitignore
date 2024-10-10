@@ -1,52 +1,18 @@
-# Prerequisites
-*.d
-
-# Object files
+# Compiled object files
 *.o
-*.ko
 *.obj
-*.elf
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Executable files
+password
 
-# Precompiled Headers
-*.gch
-*.pch
+# OpenSSL temporary files
+*.pem
+*.crt
+*.key
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Text files
+rockyou.txt
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Backup files
+*~
+*.bak

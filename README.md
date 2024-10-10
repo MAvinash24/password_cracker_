@@ -51,9 +51,7 @@ Enter the hashed password (in hexadecimal format) when prompted.
 The tool will try to find the corresponding password using a dictionary attack from the rockyou.txt file.
 
 
-__Example:__
-
-OUTPUT be like:
+Example(after executing):
 
 Enter the hash (in hexadecimal format): 5d41402abc4b2a76b9719d911017c592
 
@@ -64,5 +62,6 @@ Verifying hash using algorithm: MD5
 **Time taken to find the password: 0.004321 seconds
 
 
-License
+
+License:
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.

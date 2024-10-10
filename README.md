@@ -102,5 +102,3 @@ In this scenario, you can create your own smaller sample file for testing by run
 ```
 echo -e "password\n123456\nqwerty\nletmein" > rockyou.txt
 ```
-## License:
-This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.

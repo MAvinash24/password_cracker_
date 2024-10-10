@@ -66,7 +66,8 @@ It has around 14 million passwords.
 ```
 ./password_cracker
 ```
-                         OR
+
+Another command 
 ```
 echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********'
 ```
@@ -81,8 +82,14 @@ The tool will try to find the corresponding password using a dictionary attack f
 Example(after executing):
 
 Enter the hash (in hexadecimal format): 5d41402abc4b2a76b9719d911017c592
+
+
 Verifying hash using algorithm: MD5
+
+
 **********Password found for MD5: hello
+
+
 **********Time taken to find the password: 0.004321 seconds
 
 
@@ -91,8 +98,8 @@ _NOTE:_
 While running the program, finding the correct password from the hash may take a considerable amount of time due to the approximately 14 million passwords being tested. However, it will eventually find the right answer, testing your patience.
 
 In this scenario, you can create your own smaller sample file for testing by running the following command in your desired directory:
-
---->echo -e "password\n123456\nqwerty\nletmein" > rockyou.txt
-
+```
+echo -e "password\n123456\nqwerty\nletmein" > rockyou.txt
+```
 _License:_
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.

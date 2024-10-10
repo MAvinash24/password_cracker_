@@ -1,6 +1,8 @@
 **Password Cracker Tool**
 
 
+
+
 **Introduction**:
 This project is a password cracking tool developed in C that uses a dictionary attack to break password hashes. It supports multiple hashing algorithms such as MD5, SHA1, SHA224, SHA256, SHA384, and SHA512, utilizing OpenSSL’s cryptographic libraries for hash computation. The tool compares the user-provided hash against the hashes of common passwords from the rockyou.txt file (commonly used in password cracking).
 
@@ -35,6 +37,7 @@ Clone the repository:
 Navigate to the project directory and compile the code:
 
 --->cd password_cracker
+
 --->gcc -o password_cracker password_cracker.c -lcrypto -lssl
 
 Run the tool:

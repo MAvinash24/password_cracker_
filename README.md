@@ -15,7 +15,7 @@ Tracks the time taken to find the password (if found).
 Verifies hashes in hexadecimal format.
 
 
-**How It Works**
+**How It Works**:
 The user provides a hashed password in hexadecimal format.
 The tool reads each password from the dictionary (rockyou.txt) file.
 For each password, it computes the hash using the specified algorithm (e.g., MD5, SHA256).
@@ -24,12 +24,12 @@ If a match is found, the corresponding plaintext password is displayed along wit
 
 ***Notice**:All the files should be in same directory.{password_cracker.c , rockyou.txt }
 
-**Installation**
+**Installation**:
 To compile the tool on a Linux system (like Kali Linux), follow these steps:
 
 Ensure you have OpenSSL installed:
 
---->sudo apt update
+[sudo apt update]
 
 --->sudo apt-get install libssl-dev
 

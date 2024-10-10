@@ -4,7 +4,7 @@
 
 
 **Introduction**:
-This project is a password cracking tool developed in C that uses a dictionary attack to break password hashes. It supports multiple hashing algorithms such as MD5, SHA1, SHA224, SHA256, SHA384, and SHA512, utilizing OpenSSL’s cryptographic libraries for hash computation. The tool compares the user-provided hash against the hashes of common passwords from the rockyou.txt file (commonly used in password cracking).
+This project is a password cracking tool developed in C that uses a dictionary attack to break password hashes. It supports multiple hashing algorithms such as MD5, SHA1, SHA224, SHA256, SHA384, and SHA512, utilizing OpenSSL’s cryptographic libraries for hash computation. The tool compares the user-provided hash against the hashes of common passwords from the rockyou.txt file (commonly used in password cracking).*Here is a list of the top 500 passwords*.
 
 
 **Features**:
@@ -22,11 +22,14 @@ For each password, it computes the hash using the specified algorithm (e.g., MD5
 It compares the computed hash with the user-provided hash.
 If a match is found, the corresponding plaintext password is displayed along with the time taken to crack it.
 
+***Notice**:All the files should be in same directory.{password_cracker.c , rockyou.txt }
 
 **Installation**
 To compile the tool on a Linux system (like Kali Linux), follow these steps:
 
 Ensure you have OpenSSL installed:
+
+--->sudo apt update
 
 --->sudo apt-get install libssl-dev
 
@@ -40,13 +43,32 @@ Navigate to the project directory and compile the code:
 
 --->gcc -o password_cracker password_cracker.c -lcrypto -lssl
 
-Run the tool:
+**After compiling the code, get rockyou.txt from Kali Linux:**
+
+_Download manually_
+
+1.Open Terminal
+
+--->wget https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
+
+2.Unzip the rockyou.txt
+
+--->gzip -d rockyou.txt.gz  
+It has around 14 million passwords.
+
+3.move it to your desired directory
+
+**Run the tool:**
 
 --->./password_cracker
 
+      [or]
 
-Usage:
+--->echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********' 
+It does not prompt for input because the hash is provided through the echo command. 
+The use of grep is to filter the output and display only the line that contains ten red asterisks indicating the found password.
 
+_Usage:_
 Enter the hashed password (in hexadecimal format) when prompted.
 The tool will try to find the corresponding password using a dictionary attack from the rockyou.txt file.
 
@@ -62,6 +84,13 @@ Verifying hash using algorithm: MD5
 **Time taken to find the password: 0.004321 seconds
 
 
+_NOTE:_
 
-License:
+While running the program, finding the correct password from the hash may take a considerable amount of time due to the approximately 14 million passwords being tested. However, it will eventually find the right answer, testing your patience.
+
+In this scenario, you can create your own smaller sample file for testing by running the following command in your desired directory:
+
+--->echo -e "password\n123456\nqwerty\nletmein" > rockyou.txt
+
+_License:_
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.

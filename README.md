@@ -47,7 +47,7 @@ cd password_cracker
 ```
 gcc -o password_cracker password_cracker.c -lcrypto -lssl
 ```
-## After compiling the code, get rockyou.txt from Kali Linux:
+## After compiling the code, get rockyou.txt from Kali Linux
 
 _Download manually_
 
@@ -63,7 +63,7 @@ It has around 14 million passwords.
 
 3.move it to your desired directory
 
-## Run the tool:
+## Run the tool
 ```
 ./password_cracker
 ```
@@ -94,7 +94,7 @@ Verifying hash using algorithm: MD5
 **********Time taken to find the password: 0.004321 seconds
 
 
-## NOTE
+## NOTE:
 
 While running the program, finding the correct password from the hash may take a considerable amount of time due to the approximately 14 million passwords being tested. However, it will eventually find the right answer, testing your patience.
 
@@ -102,5 +102,5 @@ In this scenario, you can create your own smaller sample file for testing by run
 ```
 echo -e "password\n123456\nqwerty\nletmein" > rockyou.txt
 ```
-## License
+## License:
 This project is licensed under the MIT License. Feel free to use, modify, and distribute it as needed.

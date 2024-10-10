@@ -29,13 +29,13 @@ To compile the tool on a Linux system (like Kali Linux), follow these steps:
 
 Ensure you have OpenSSL installed:
 
-[sudo apt update]
+sudo apt update 
 
---->sudo apt-get install libssl-dev
+sudo apt-get install libssl-dev
 
 Clone the repository:
 
---->git clone https://github.com/MAvinash24/password_cracker_.git
+git clone https://github.com/MAvinash24/password_cracker_.git
 
 Navigate to the project directory and compile the code:
 
@@ -62,7 +62,7 @@ It has around 14 million passwords.
 
 --->./password_cracker
 
-      [or]
+
 
 --->echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********' 
 It does not prompt for input because the hash is provided through the echo command. 

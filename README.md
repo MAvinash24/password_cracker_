@@ -32,7 +32,7 @@ Ensure you have OpenSSL installed:
 
 Clone the repository:
 
---->git clone https://github.com/MAvinash24/password_cracker.git
+--->git clone https://github.com/MAvinash24/password_cracker_.git
 
 Navigate to the project directory and compile the code:
 

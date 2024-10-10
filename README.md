@@ -42,7 +42,7 @@ git clone https://github.com/MAvinash24/password_cracker_.git
 ```
 Navigate to the project directory and compile the code:
 ```
-cd password_cracker
+cd password_cracker_
 ```
 ```
 gcc -o password_cracker password_cracker.c -lcrypto -lssl
@@ -75,12 +75,12 @@ echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********'
 It does not prompt for input because the hash is provided through the echo command. 
 The use of grep is to filter the output and display only the line that contains ten red asterisks indicating the found password.
 
-## Usage
+## Example
 Enter the hashed password (in hexadecimal format) when prompted.
 The tool will try to find the corresponding password using a dictionary attack from the rockyou.txt file.
 
 
-Example(after executing):
+### After executing:
 
 Enter the hash (in hexadecimal format): 5d41402abc4b2a76b9719d911017c592
 

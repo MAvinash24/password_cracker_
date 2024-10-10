@@ -29,42 +29,47 @@ To compile the tool on a Linux system (like Kali Linux), follow these steps:
 
 Ensure you have OpenSSL installed:
 
+```
 sudo apt update 
-
+```
+```
 sudo apt-get install libssl-dev
-
+```
 Clone the repository:
-
+```
 git clone https://github.com/MAvinash24/password_cracker_.git
-
+```
 Navigate to the project directory and compile the code:
-
---->cd password_cracker
-
---->gcc -o password_cracker password_cracker.c -lcrypto -lssl
-
+```
+cd password_cracker
+```
+```
+gcc -o password_cracker password_cracker.c -lcrypto -lssl
+```
 **After compiling the code, get rockyou.txt from Kali Linux:**
 
 _Download manually_
 
 1.Open Terminal
-
---->wget https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
-
+```
+wget https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz
+```
 2.Unzip the rockyou.txt
-
---->gzip -d rockyou.txt.gz  
+```
+gzip -d rockyou.txt.gz
+```  
 It has around 14 million passwords.
 
 3.move it to your desired directory
 
 **Run the tool:**
-
---->./password_cracker
-
-
-
---->echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********' 
+```
+./password_cracker
+```
+                         OR
+```
+echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********'
+```
 It does not prompt for input because the hash is provided through the echo command. 
 The use of grep is to filter the output and display only the line that contains ten red asterisks indicating the found password.
 
@@ -76,12 +81,9 @@ The tool will try to find the corresponding password using a dictionary attack f
 Example(after executing):
 
 Enter the hash (in hexadecimal format): 5d41402abc4b2a76b9719d911017c592
-
 Verifying hash using algorithm: MD5
-
-**Password found for MD5: hello
-
-**Time taken to find the password: 0.004321 seconds
+**********Password found for MD5: hello
+**********Time taken to find the password: 0.004321 seconds
 
 
 _NOTE:_

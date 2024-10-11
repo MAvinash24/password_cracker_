@@ -4,7 +4,9 @@
 
 
 ## Introduction
-This project is a password cracking tool developed in C that uses a dictionary attack to break password hashes. It supports multiple hashing algorithms such as MD5, SHA1, SHA224, SHA256, SHA384, and SHA512, utilizing OpenSSL’s cryptographic libraries for hash computation. The tool compares the user-provided hash against the hashes of common passwords from the rockyou.txt file (commonly used in password cracking).*Here is a list of the top 500 passwords*.
+This project is a password cracking tool developed in C that uses a dictionary attack to break password hashes. It supports multiple hashing algorithms such as MD5, SHA1, SHA224, SHA256, SHA384, and SHA512, utilizing OpenSSL’s cryptographic libraries for hash computation. The tool compares the user-provided hash against the hashes of common passwords from the rockyou.txt file, a popular dataset used in password cracking.
+
+#### The project also includes a list of the top 500 most commonly used passwords from rockyou.txt, which improves the chances of successful cracking by focusing on the weakest and most frequently reused passwords.
 
 
 ## Features
@@ -47,9 +49,11 @@ cd password_cracker_
 ```
 gcc -o password_cracker password_cracker.c -lcrypto -lssl
 ```
-## After compiling the code, get rockyou.txt from Kali Linux
 
-_Download manually_
+Once the code is compiled, the next step is to acquire the rockyou.txt file, commonly used for dictionary attacks. **If needed** in real-time conditions, you can download and extract it manually from Kali Linux.However, if the full list is not needed, you can proceed to **run the tool** using the top 500 passwords already provided in my GitHub repository.
+ 
+
+_Download manually(if necessary)_
 
 1.Open Terminal
 ```

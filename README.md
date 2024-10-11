@@ -69,15 +69,19 @@ It has around 14 million passwords.
 
 ## Run the tool
 ```
-./password_cracker | grep '**********'
+./password_cracker
 ```
 
 Another command 
+
+To run the password_cracker without input prompts, use:
 ```
 echo '5f4dcc3b5aa765d61d8327deb882cf99' | ./password_cracker | grep '**********'
 ```
-It does not prompt for input because the hash is provided through the echo command. 
-The use of grep is to filter the output and display only the line that contains ten red asterisks indicating the found password.
+
+Automated Input: The echo command sends the hash 5f4dcc3b5aa765d61d8327deb882cf99 directly to the tool, so you don’t have to enter it manually.
+
+Filtering Output: The grep '**********' command filters the results, showing only the line with ten red asterisks, which indicates the password has been found.
 
 ## Example
 Enter the hashed password (in hexadecimal format) when prompted.

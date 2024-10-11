@@ -53,7 +53,7 @@ gcc -o password_cracker password_cracker.c -lcrypto -lssl
 Once the code is compiled, the next step is to acquire the rockyou.txt file, commonly used for dictionary attacks. **If needed** in real-time conditions, you can download and extract it manually from Kali Linux.However, if the full list is not needed, you can proceed to **run the tool** using the top 500 passwords already provided in my GitHub repository.
  
 
-_Download manually(if necessary)_
+_Download manually (if necessary)_
 
 1.Open Terminal
 ```

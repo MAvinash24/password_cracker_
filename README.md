@@ -69,7 +69,7 @@ It has around 14 million passwords.
 
 ## Run the tool
 ```
-./password_cracker
+./password_cracker | grep '**********'
 ```
 
 Another command 

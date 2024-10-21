@@ -44,7 +44,7 @@ git clone https://github.com/MAvinash24/password_cracker_.git
 ```
 Navigate to the project directory and compile the code:
 ```
-cd password_cracker_
+cd password_cracker_-main
 ```
 ```
 gcc -o password_cracker password_cracker.c -lcrypto -lssl
